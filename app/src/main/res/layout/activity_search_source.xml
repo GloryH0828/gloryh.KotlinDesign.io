@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Admin.SearchSourceActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearLayout48" android:layout_marginTop="80dp">
+        <TextView
+                android:text="按"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/textView32" android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_gravity="center" android:gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/sea_c_key" android:textSize="20sp"
+                android:textColor="#2196F3"
+                android:layout_gravity="center" android:gravity="center"/>
+        <Spinner
+                android:layout_width="39dp"
+                android:layout_height="48dp"
+                android:id="@+id/spinner8"
+                android:layout_gravity="center"/>
+        <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/sea_c_index"
+                android:textSize="20sp"
+                android:gravity="center" android:layout_gravity="center" android:hint="请输入关键字"/>
+        <Button
+                android:text="查询"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_sea_c_search" android:textSize="20sp"
+                android:textColor="#000000" android:background="#3F51B5"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout48"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout48"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout48" android:layout_marginTop="60dp"
+            android:id="@+id/sea_c_layout">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center">
+            <TextView
+                    android:text="课程："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView43" android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sea_c_name" android:textSize="20sp"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_gravity="center">
+            <TextView
+                    android:text="教师："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView53" android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sea_c_teacher" android:textSize="20sp"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_gravity="center">
+            <TextView
+                    android:text="班级："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView57" android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sea_c_class" android:textSize="20sp"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_gravity="center">
+            <TextView
+                    android:text="成绩："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView60" android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginRight="40dp"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sea_c_performance" android:textSize="20sp"
+                    android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_gravity="center"
+                android:gravity="center">
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/bt_previous"
+                    android:id="@+id/sea_c_previous"
+                    android:clickable="true" android:contentDescription="TODO" android:focusable="true"/>
+            <TextView
+                    android:text="30/30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/sea_c_count" android:textSize="20sp"
+                    android:textColor="#000000" android:gravity="center" android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/bt_next"
+                    android:id="@+id/sea_c_next"
+                    android:clickable="true" android:contentDescription="TODO" android:focusable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

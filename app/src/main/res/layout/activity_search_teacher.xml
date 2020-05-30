@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Admin.SearchTeacherActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/linearLayout28" android:layout_marginTop="100dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp">
+            <TextView
+                    android:text="按"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView28" android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:gravity="center"/>
+            <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sea_tea_key" android:textSize="20sp"
+                    android:textColor="#52C9E2"
+                    android:gravity="center"/>
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sea_tea_spinner"
+            />
+        </LinearLayout>
+        <EditText
+                android:layout_width="150dp"
+                android:layout_height="47dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/sea_tea_index"
+                android:textSize="20sp" android:gravity="center"/>
+        <Button
+                android:text="搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_sea_tea" android:background="#9C27B0"
+                android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout28"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout28"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout28" android:id="@+id/linearLayout29"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:text="姓名："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34" android:textSize="20sp"
+                android:textColor="#000000"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_name" android:textSize="20sp"
+                android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout29"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout29"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout29" android:id="@+id/linearLayout30"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:text="工号："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView40" android:textSize="20sp"
+                android:textColor="#000000"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_username" android:textSize="20sp"
+                android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout30"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout30"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout30" android:id="@+id/linearLayout31"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:text="部门："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView42" android:textSize="20sp"
+                android:textColor="#000000"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_depart" android:textSize="20sp"
+                android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout31"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout31"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout31" android:id="@+id/linearLayout32"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:text="课程："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView44" android:textSize="20sp"
+                android:textColor="#000000"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_course" android:textColor="#000000"
+                android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout32"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout32"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout32" android:id="@+id/linearLayout33"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:text="班级："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView45" android:textSize="20sp"
+                android:textColor="#000000"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_class" android:textColor="#000000"
+                android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/linearLayout33"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout33"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout33" android:layout_marginTop="50dp"
+            android:id="@+id/linearLayout34">
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" app:srcCompat="@drawable/bt_previous"
+                android:id="@+id/bt_sea_tea_previous"
+                android:clickable="true"
+                android:contentDescription="TODO" android:focusable="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/sea_tea_count" android:textSize="20sp"
+                android:textColor="#000000" android:gravity="center"
+                android:layout_marginLeft="40dp" android:layout_marginRight="40dp"/>
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp" app:srcCompat="@drawable/bt_next"
+                android:id="@+id/bt_sea_tea_next" android:clickable="true" android:contentDescription="TODO"
+                android:focusable="true"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/linearLayout35">
+        <Button
+                android:text="密码重置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_reset" android:background="#673AB7"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp" android:layout_marginBottom="78dp"/>
+        <Button
+                android:text="信息修改"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sea_tea_edit" android:textSize="20sp"
+                android:background="#673AB7" android:layout_marginRight="40dp"/>
+        <Button
+                android:text="信息删除"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sea_tea_delete" android:layout_weight="1"
+                android:background="#3F51B5" android:textSize="20sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.example.myapplication">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".Activity.Admin.AdminEditMsgActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AddClassActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AddSpecialityActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.SearchSourceActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.SearchPerformanceActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.SearchTeacherActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.SearchStudentActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AddTeacherActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AddStudentActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Teacher.TeacherEditPwdActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Teacher.TeacherEditMsgActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Student.StudentEditPwdActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Student.StudentEditmsgActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AdminEditPwdActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Teacher.TeacherActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Student.StudentActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".Activity.Admin.AdminActivity" tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>
